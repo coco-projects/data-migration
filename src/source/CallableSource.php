@@ -11,6 +11,7 @@ class CallableSource extends DataSource
 {
     protected ?Collection $collection = null;
 
+    //https://loophp-collection.readthedocs.io/en/latest/pages/api.html
     public function __construct($source)
     {
         $this->collection = Collection::fromCallable($source);

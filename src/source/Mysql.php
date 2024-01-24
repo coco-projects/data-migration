@@ -23,6 +23,7 @@ class Mysql extends DataSource
         'charset'  => 'utf8mb4',
     ];
 
+    //    https://www.kancloud.cn/manual/think-orm/1257999
     public function __construct($dbName, $table, $config = [])
     {
         foreach ($config as $k => $v) {

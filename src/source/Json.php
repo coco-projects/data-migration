@@ -12,12 +12,13 @@ class Json extends DataSource
 {
     protected ?Collection $collection = null;
 
+    //    https://packagist.org/packages/coco-project/json-parser
     public function __construct($source, $pointer = null)
     {
         $parser = JsonParser::parse($source);
 
         if ($pointer) {
-            $parser = $parser->pointer('/data/user/-');
+            $parser = $parser->pointer($pointer);
         }
 
         $this->collection = Collection::fromIterable($parser);

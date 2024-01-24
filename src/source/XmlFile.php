@@ -12,6 +12,7 @@ class XmlFile extends DataSource
 {
     protected ?Collection $collection = null;
 
+    //    https://packagist.org/packages/coco-project/xml-reader
     public function __construct($source)
     {
         $xmlStream = fopen($source, 'r');

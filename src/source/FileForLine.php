@@ -9,6 +9,7 @@
 
 class FileForLine extends IterableSource
 {
+    //    https://packagist.org/packages/bcremer/line-reader
     public function __construct($source)
     {
         $lineGenerator = LineReader::readLines($source);
